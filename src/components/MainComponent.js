@@ -57,7 +57,7 @@ componentDidMount() {
         <DishDetails dish={this.props.dishes.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
         isLoading={this.props.dishes.isLoading}
         ErrMess={this.props.dishes.errMess}
-          comments={this.props.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
+          comments={this.props.comments.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
           commentsErrMess={this.props.comments.errMess} addComment={this.props.addComment} />
     );
     }
